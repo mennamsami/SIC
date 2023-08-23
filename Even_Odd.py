@@ -1,6 +1,10 @@
-num = int(input("Enter a number: "))
+#!/bin/bash
 
-if num % 2 == 0:
-    print(num, "is even")
-else:
-    print(num, "is odd")
+read -p "Enter a number: " num
+
+if [ $((num % 2)) -eq 0 ]
+then
+    echo "$num is even"
+else
+    echo "$num is odd"
+fi
